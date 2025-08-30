@@ -61,3 +61,21 @@ cd caminho/para/a/pasta/do/projeto
 
 **Configure o Banco de Dados (Apenas na primeira vez):**  
 Antes de usar o menu principal, você precisa criar o arquivo
+
+## ⚠️ Primeira Execução
+
+Na **primeira vez** que for utilizar o sistema, é necessário criar o banco de dados e a tabela de tarefas. Para isso, execute o seguinte comando no terminal:
+
+```sh
+python3 cria_banco.py
+```
+
+Esse comando irá gerar o arquivo `gerenciador_tarefas.db` na pasta do projeto.
+
+Após a criação do banco, basta rodar o sistema principal normalmente:
+
+```sh
+python3 main.py
+```
+
+A partir daí, você poderá utilizar todas as funcionalidades do gerenciador de tarefas pelo
