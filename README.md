@@ -19,8 +19,6 @@ Um sistema simples e eficiente para gerenciar suas tarefas diretamente do termin
 
 ## 📂 Estrutura do Projeto
 
-O projeto foi organizado de forma modular para promover a clareza e a separação de responsabilidades:
-
 ```
 .
 ├── cria_banco.py                 # Script para criar o banco de dados e a tabela (setup inicial).
@@ -35,36 +33,19 @@ O projeto foi organizado de forma modular para promover a clareza e a separaçã
 
 ## 🚀 Como Usar
 
-Para executar este projeto em sua máquina local, siga os passos abaixo.
+1. **Abra o terminal e navegue até a pasta do projeto:**
+   ```sh
+   cd caminho/para/a/pasta/do/projeto
+   ```
 
-### Pré-requisitos
-
-Você precisa ter o **Python 3** instalado em seu sistema. Para verificar se você o tem, abra seu terminal e digite:
-
-```sh
-python3 --version
-```
-
-Se não estiver instalado, você pode baixá-lo em [python.org](https://www.python.org/).
-
-### Passos para Execução
-
-**Clone ou baixe o projeto:**  
-Salve todos os arquivos `.py` em uma única pasta em seu computador.
-
-**Navegue até a pasta do projeto:**  
-Use o comando `cd` no seu terminal para entrar na pasta onde você salvou os arquivos.
-
-```sh
-cd caminho/para/a/pasta/do/projeto
-```
-
-**Configure o Banco de Dados (Apenas na primeira vez):**  
-Antes de usar o menu principal, você precisa criar o arquivo
+2. **Execute o sistema principal:**
+   ```sh
+   python3 main.py
+   ```
 
 ## ⚠️ Primeira Execução
 
-Na **primeira vez** que for utilizar o sistema, é necessário criar o banco de dados e a tabela de tarefas. Para isso, execute o seguinte comando no terminal:
+Na **primeira vez** que for utilizar o sistema, é necessário criar o banco de dados e a tabela de tarefas. Para isso, execute o seguinte comando no terminal **antes de rodar o main.py**:
 
 ```sh
 python3 cria_banco.py
@@ -72,10 +53,20 @@ python3 cria_banco.py
 
 Esse comando irá gerar o arquivo `gerenciador_tarefas.db` na pasta do projeto.
 
-Após a criação do banco, basta rodar o sistema principal normalmente:
+Depois disso, basta rodar o sistema principal normalmente:
 
 ```sh
 python3 main.py
 ```
 
-A partir daí, você poderá utilizar todas as funcionalidades do gerenciador de tarefas pelo
+A partir daí, você poderá utilizar todas as funcionalidades do gerenciador de tarefas pelo menu interativo.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT.
+
+## 👤 Autor
+
+Feito por [Gustavo Barboza & Tiago Geraldo].
